@@ -1,12 +1,6 @@
 import numpy as np
 import pandas as pd
 
-path_to_file = 'data/padi.csv'
-province = 'DI YOGYAKARTA'
-
-df = pd.read_csv(path_to_file)
-df = df[df[df.columns[0]] == province]
-
 def preprocess(data, sliding_window=1):
     """
             Preprocessing the Data
@@ -34,8 +28,16 @@ def preprocess(data, sliding_window=1):
     new = []
     for i in range(size):
         new.append(data[i:(i+1+sliding_window)])
-    return new
+    return (pd.DataFrame(new))
 
-preprocessed = (pd.DataFrame(preprocess(df, 3)))
-preprocessed.to_csv('data/preprocessed.csv')
-print('The preprocessed data has been saved as new csv file in data/preprocessed.csv')
+
+if __name__ == '__main__':
+	path_to_file = 'data/padi.csv'
+	province = 'DI YOGYAKARTA'
+
+	df = pd.read_csv(path_to_file)
+	df = df[df[df.columns[0]] == province]
+
+	preprocessed = preprocess(df, 3)
+	preprocessed.to_csv('data/preprocessed.csv')
+	print('The preprocessed data has been saved as new csv file in data/preprocessed.csv')
