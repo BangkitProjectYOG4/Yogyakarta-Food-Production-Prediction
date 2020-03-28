@@ -27,7 +27,8 @@ train_labels = train_data.pop(train_data.columns[-1])
 test_labels = test_data.pop(test_data.columns[-1])
 
 model = building_model(train_data)
-trained_model = training(model, train_data, train_labels, epochs=1000)
+tf.random.set_seed(28)
+trained_model = training(model, train_data, train_labels, epochs=1000, early_stop=False)
 ploting_history(trained_model)
 
 print('')
