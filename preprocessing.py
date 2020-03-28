@@ -18,12 +18,12 @@ def preprocess(data, sliding_window=1):
             3. grouped the independent and it's dependent
                 variable into 1 row
     """
-    data.drop(df.columns[0], axis=True, inplace=True)
+    data.drop(data.columns[0], axis=True, inplace=True)
     data = (data
-      .astype('int')
-      .values
-      .flatten()
-      .tolist())
+            .astype('int')
+            .values
+            .flatten()
+            ).tolist()
     size = len(data) - sliding_window
     new = []
     for i in range(size):

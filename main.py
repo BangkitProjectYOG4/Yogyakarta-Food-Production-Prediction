@@ -10,16 +10,21 @@ from train_model import training
 from ploting import ploting_history
 from evaluation_model import evaluation
 
-
 # preprocess('data/padi.csv', 1)
-preprocessed_dataset = pd.read_csv(
-    "data/preprocessed.csv", names=['Year-3', 'Year-2', 'Year-1', 'Target'], sep=",")
+path_to_file = 'data/padi.csv'
+province = 'DI YOGYAKARTA'
+sliding_window = 3
+train_test_proportion = 0.8
 
-train_data = preprocessed_dataset.sample(frac=0.9, random_state=0)
-test_data = preprocessed_dataset.drop(train_data.index)
+data = pd.read_csv(path_to_file)
+preprocessed = preprocess(data[data['Provinsi'] == province],\
+                            sliding_window)
 
-train_labels = train_data.pop('Target')
-test_labels = test_data.pop('Target')
+train_data = preprocessed[:int(train_test_proportion*len(preprocessed))]
+test_data = preprocessed.drop(train_data.index)
+
+train_labels = train_data.pop(train_data.columns[-1])
+test_labels = test_data.pop(test_data.columns[-1])
 
 model = building_model(train_data)
 trained_model = training(model, train_data, train_labels, epochs=1000)
