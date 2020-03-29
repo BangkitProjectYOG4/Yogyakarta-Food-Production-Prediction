@@ -2,7 +2,7 @@
 This Repository is about build Regression model to try predict values of Paddy Production commodity in tons from Some years before (Respectively) using Keras(Tensorflow) Sequence modeling.
 
 ## Dataset
-We got the dataset from ['Produksi Pertanian Indonesia BPS'](https://www.kaggle.com/lintangwisesa/produksi-pertanian-indonesia-bps-19932015)
+We got the dataset from ['Produksi Pertanian Indonesia BPS'](https://www.kaggle.com/lintangwisesa/produksi-pertanian-indonesia-bps-19932015). From all dataset on that folder, we used Padi.csv (Paddy Production dataset) as data to make regression model. The datset contains commodity values for paddy and other commodity each year from 1993 until 2015, in all Province in Indonesia. Have 24 columns where 23 of them provide the commodity values from each year (in tons, as integer) and 1 column gives the info about their respective province (in string). The number of rows represent the number of provinces in Indonesia, which is 34.
 
 ## Prerequisites
 What things you need to install some python package before you run the notebook or python code
