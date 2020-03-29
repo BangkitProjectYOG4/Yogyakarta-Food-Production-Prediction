@@ -1,8 +1,8 @@
   # Yogyakarta-Food-Production-Prediction
-This Repository is about build Regression model to try predict values of Paddy Production commodity in tons from Some years before (Respectively) using Keras(Tensorflow) Sequence modeling.
+This Repository is about build Regression model to try predict values of Rice Production commodity in tons from Some years before (Respectively) using Keras(Tensorflow) Sequence modeling.
 
 ## Dataset
-We got the dataset from ['Produksi Pertanian Indonesia BPS'](https://www.kaggle.com/lintangwisesa/produksi-pertanian-indonesia-bps-19932015). From all dataset on that folder, we used Padi.csv (Paddy Production dataset) as data to make regression model. The datset contains commodity values for paddy and other commodity each year from 1993 until 2015, in all Province in Indonesia. Have 24 columns where 23 of them provide the commodity values from each year (in tons, as integer) and 1 column gives the info about their respective province (in string). The number of rows represent the number of provinces in Indonesia, which is 34.
+We got the dataset from ['Produksi Pertanian Indonesia BPS'](https://www.kaggle.com/lintangwisesa/produksi-pertanian-indonesia-bps-19932015). From all dataset on that folder, we used Padi.csv (Rice Production dataset) as data to make regression model. The datset contains commodity values for rice and other commodity each year from 1993 until 2015, in all Province in Indonesia. Have 24 columns where 23 of them provide the commodity values from each year (in tons, as integer) and 1 column gives the info about their respective province (in string). The number of rows represent the number of provinces in Indonesia, which is 34.
 
 ## Prerequisites
 What things you need to install some python package before you run the notebook or python code
@@ -15,11 +15,11 @@ What things you need to install some python package before you run the notebook 
 ```
 ## Contents
 1. Folder [data](https://github.com/BangkitProjectYOG4/Yogyakarta-Food-Production-Prediction/tree/master/data) 
-(it's contain dataset Indonesia food production from 1993 until 2015 provided by BPS such as Corn, Paddy, Soy, and etc.)
+(it's contain dataset Indonesia food production from 1993 until 2015 provided by BPS such as Corn, Rice, Soy, and etc.)
 2. Folder [model](https://github.com/BangkitProjectYOG4/Yogyakarta-Food-Production-Prediction/tree/master/model) 
 (it's contain Regression model with trained weights from modeling in Modeling notebook)
 3. Folder [Plot](https://github.com/BangkitProjectYOG4/Yogyakarta-Food-Production-Prediction/tree/master/plot) 
-(it's contain MAE and MSE result during train and validation process also Regression and Prediction graph of Paddy Prodcution)
+(it's contain MAE and MSE result during train and validation process also Regression and Prediction graph of Rice Prodcution)
 4. Modeling Notebook
     - [Final Model](https://github.com/BangkitProjectYOG4/Yogyakarta-Food-Production-Prediction/blob/master/Final_regression_model.ipynb)
     - [Model with kfold and early stopping](https://github.com/BangkitProjectYOG4/Yogyakarta-Food-Production-Prediction/blob/master/sequence_regression_model.ipynb)
@@ -32,7 +32,7 @@ What things you need to install some python package before you run the notebook 
 *Note : 
 - Modeling we used is [Final Model](https://github.com/BangkitProjectYOG4/Yogyakarta-Food-Production-Prediction/blob/master/Final_regression_model.ipynb)
 - Model Python file (main.py) is same model and workflow as Final Model, but we not update it until final model like Final_regression_model.ipynb
-- preprocessing.py is very necessery file to proceed raw dataset of Padi.csv (Paddy Production dataset) to dataset that can be used to make regression model in modeling file. 
+- preprocessing.py is very necessery file to proceed raw dataset of Padi.csv (Rice Production dataset) to dataset that can be used to make regression model in modeling file. 
 ```
 ## License
 This project is licensed under the MIT License - see the [LICENSE](https://github.com/BangkitProjectYOG4/Yogyakarta-Food-Production-Prediction/blob/master/LICENSE) file for details
