@@ -18,14 +18,14 @@ What things you need to install some python package before you run the notebook 
 (it's contain dataset Indonesia food production from 1993 until 2015 provided by BPS such as Corn, Paddy, Soy, and etc.)
 2. Folder [model](https://github.com/BangkitProjectYOG4/Yogyakarta-Food-Production-Prediction/tree/master/model) 
 (it's contain Regression model with trained weights from modeling in Modeling notebook)
-3. Folder [Plot] (https://github.com/BangkitProjectYOG4/Yogyakarta-Food-Production-Prediction/tree/master/plot) 
+3. Folder [Plot](https://github.com/BangkitProjectYOG4/Yogyakarta-Food-Production-Prediction/tree/master/plot) 
 (it's contain MAE and MSE result during train and validation process also Regression and Prediction graph of Paddy Prodcution)
 4. Modeling Notebook
 - [Final Model](https://github.com/BangkitProjectYOG4/Yogyakarta-Food-Production-Prediction/blob/master/Final_regression_model.ipynb)
 - [Model with kfold and early stopping] (https://github.com/BangkitProjectYOG4/Yogyakarta-Food-Production-Prediction/blob/master/sequence_regression_model.ipynb)
 - [Protoype Model](https://github.com/BangkitProjectYOG4/Yogyakarta-Food-Production-Prediction/blob/master/Regression_food_production_indonesia.ipynb)
 5. Model Python file
-- [Main file] (https://github.com/BangkitProjectYOG4/Yogyakarta-Food-Production-Prediction/blob/master/main.py)
+- [Main file](https://github.com/BangkitProjectYOG4/Yogyakarta-Food-Production-Prediction/blob/master/main.py)
 - [Preprocessing dataset] (https://github.com/BangkitProjectYOG4/Yogyakarta-Food-Production-Prediction/blob/master/preprocessing.py)
 
 ```
